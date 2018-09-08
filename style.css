@@ -23,31 +23,40 @@ body {
 	background-position: top left;
 	background-size: 700px;
 }
-/* 
-img {
-    max-width: 100%;
-    height: auto;
-    -ms-interpolation-mode: bicubic
-}
- */
+
 hr {
-	/*width: 960px;*/
 	margin: auto;
 	border-style: dashed;
 	border-width: 0.5px;
 }
 
 h2 {
-	
 	font-family: "Annie Use Your Telescope", Arial, serif;
 	font-size: 1.3em;
 	}
 
 h3 {
-	
 	font-family: "Annie Use Your Telescope", Arial, serif;
 	font-size: 1.1em;
 	margin:-5px 0 10px 0;
+}
+
+h4 {
+	font-family: "Annie Use Your Telescope", Arial, serif;
+	font-size: 1.2em;
+		text-shadow: rgba(5, 6, 6, .20)0 0 10px;
+}
+
+#text-link {
+	text-decoration: none;
+	}
+
+#text-link:visited, #text-link:link{
+	color: black;
+	}
+	
+#text-link:visited:hover, #text-link:hover {
+	color: #0066cc;
 }
 
 .section-header {
@@ -69,7 +78,6 @@ h3 {
 }
 
 .section-download {
-	/* background-color: var(--main-bg-color); */
 	padding: 30px;
 	display: flex;
 	justify-content: center;
@@ -152,7 +160,6 @@ iframe{
 
 
 .section-screenshots {
-	/* background-color: var(--main-bg-color); */
 	padding: 30px 10px;
 	max-width: 100%;
 	display: flex;
@@ -218,16 +225,43 @@ iframe{
 	font-size: 1.05em;
 	}
 
-.download-button, .quote-img, .award-img, .credit {
+.download-button, .quote-img, .award-img, .credit, .social-link-button {
  	-webkit-transition:opacity 0.2s;
     -moz-transition:opacity 0.2s;
     -o-transition:opacity 0.2s;
     transition: opacity 0.2s;
 }
 
-.quote-img:hover, .download-button:hover, .award-img:hover, .credit:hover {
+.quote-img:hover, .download-button:hover, .award-img:hover, .credit:hover, .social-link-button:hover {
 	opacity: 0.7;
 	}
+
+.section-social-links {
+	max-width: 100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.social-links-container {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-link-button {
+	max-width:20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-link-button img {
+	max-width:100%;
+}
 
 .section-credits { 
 	padding: 20px 10px 0 10px;
@@ -271,6 +305,18 @@ iframe{
 	height:80%;
 	width: auto;
 }
+
+footer {
+	padding: 30px 10px 10px 10px;
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
+	font-size: 0.7em;
+	line-height: 0.8em;
+	text-align: center;
+	}
 
 @media only screen and (min-width: 415px) /*and (max-width: 960px)*/
 {
@@ -409,33 +455,5 @@ iframe{
 	.credit img {
 	height:100%;
 	width: auto;
-}
-}
-
-footer {
-	/* background-color: tan; */
-	padding: 10px;
-	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	padding-top: 30px;
-	
-	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
-	font-size: 0.7em;
-	line-height: 0.8em;
-	text-align: center;
 	}
-
-#text-link {
-	text-decoration: none;
-	}
-
-#text-link:visited, #text-link:link{
-	color: black;
-	}
-	
-#text-link:visited:hover, #text-link:hover {
-	color: #0066cc;
 }
