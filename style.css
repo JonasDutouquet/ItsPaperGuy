@@ -151,8 +151,10 @@ iframe{
 }
 
 .section-features {
-	padding-top: 40px;
+	margin: 8vh 0;
 	max-width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
 .features-container {
@@ -191,7 +193,6 @@ strong {
 	margin: 10px 0;
 }
 
-
 .section-screenshots {
 	padding: 30px 10px;
 	max-width: 100%;
@@ -222,7 +223,7 @@ strong {
 	}
 
 .section-awards {
-	padding: 30px 10px;
+	margin: 8vh;
 	max-width: 100%;
 	display: flex;
 	justify-content: center;
@@ -298,7 +299,6 @@ strong {
 }
 
 .section-credits { 
-border: 1px solid blue;
 	padding: 20px 5px 0 5px;
 	max-width: 100%;
 	display: flex;
