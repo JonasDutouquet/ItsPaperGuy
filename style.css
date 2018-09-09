@@ -475,37 +475,37 @@ footer {
   }
 
   .parallax__layer--1 {
-    background-image: url("images/parallax/parallax_1.png");
+    background-image: url("images/parallax_1.png");
     transform: translateZ(0);
   }
   
   .parallax__layer--2 {
-    background-image: url("images/parallax/parallax_2.png");
+    background-image: url("images/parallax_2.png");
     transform: translateZ(-200px) scale(1.26);
   }
 
   .parallax__layer--3 {
-    background-image: url("images/parallax/parallax_3.png");
+    background-image: url("images/parallax_3.png");
     transform: translateZ(-400px) scale(1.506);
   }
 
   .parallax__layer--4 {
-    background-image: url("images/parallax/parallax_4.png");
+    background-image: url("images/parallax_4.png");
     transform: translateZ(-600px) scale(1.75);
   }
 
   .parallax__layer--5 {
-    background-image: url("images/parallax/parallax_5.png");
+    background-image: url("images/parallax_5.png");
     transform: translateZ(-800px) scale(2);
   }
 
   .parallax__layer--6 {
-    background-image: url("images/parallax/parallax_6.png");
+    background-image: url("images/parallax_6.png");
     transform: translateZ(-1000px) scale(2.27);
   }
 
   .parallax__layer--7 {
-     background-image: url("images/parallax/parallax_7.png");
+     background-image: url("images/parallax_7.png");
     transform: translateZ(-1200px) scale(2.525);
   }
 	
