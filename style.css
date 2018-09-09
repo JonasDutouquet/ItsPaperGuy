@@ -1,13 +1,15 @@
 @charset "UTF-8";
 @font-face {
     font-family: "Annie Use Your Telescope";
-    src: url("fonts/annieuseyourtelescope-webfont.woff2") format("woff2"),
-         url("fonts/annieuseyourtelescope-webfont.woff") format("woff"),
-         url("fonts/AnnieUseYourTelescope.ttf") format("truetype"),
-         url("fonts/AnnieUseYourTelescope.ttf") format("opentype");
+    src: url("fonts/annie/annieuseyourtelescope-webfont.woff2") format("woff2"),
+         url("fonts/annie/annieuseyourtelescope-webfont.woff") format("woff"),
+         url("fonts/annie/annieuseyourtelescope.ttf") format("truetype"),
+         url("fonts/annie/annieuseyourtelescope.ttf") format("opentype");
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
     font-family: 'quicksandregular';
     src: url('fonts/quicksand/quicksand-regular-webfont.woff2') format('woff2'),
          url('fonts/quicksand/quicksand-regular-webfont.woff') format('woff'),
@@ -99,7 +101,6 @@ h4 {
 	display: flex;
 	justify-content: center;
 	margin: 20px;
-/* 	z-index: 4; */
 }
 
 .section-download {
@@ -296,7 +297,8 @@ strong {
 }
 
 .section-credits { 
-	padding: 20px 10px 0 10px;
+border: 1px solid blue;
+	padding: 20px 5px 0 5px;
 	max-width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -350,7 +352,7 @@ footer {
 	text-align: center;
 	}
 
-@media only screen and (min-width: 415px) /*and (max-width: 960px)*/
+@media only screen and (min-width: 415px) or (orientation: landscape)
 {
 	hr { width: 640px;}
 	
@@ -442,7 +444,7 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 960px)
+@media only screen and (min-width: 960px) 
 {
 	hr { width: 960px;}
 	
