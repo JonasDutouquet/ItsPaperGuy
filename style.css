@@ -7,6 +7,14 @@
          url("fonts/AnnieUseYourTelescope.ttf") format("opentype");
     font-weight: normal;
     font-style: normal;
+
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand/quicksand-regular-webfont.woff') format('woff'),
+         url('fonts/quicksand/quicksand-regular-webfont.ttf') format('truetype'),
+         url('fonts/quicksand/quicksand-regular-webfont.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * { 
@@ -16,12 +24,29 @@
 }
 
 body {
-	--main-bg-color: #ddcaaa;
+	--main-bg-color: #2d5da4;
 	background-color: var(--main-bg-color);	
-	background-image: url("./images/img_floor.png");
+	overflow: hidden;
+}
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 800px;
+    perspective:800px;
+    max-width:100%;
+  }
+  
+.parallax__group{
+	display: none;
+	}
+
+.content {
+	background-image: url("./images/img_floor_2.png");
 	background-repeat: repeat;
-	background-position: top left;
-	background-size: 700px;
+	background-position: 55% 14px;
+	background-size: 70px;
 }
 
 hr {
@@ -44,7 +69,7 @@ h3 {
 h4 {
 	font-family: "Annie Use Your Telescope", Arial, serif;
 	font-size: 1.2em;
-		text-shadow: rgba(5, 6, 6, .20)0 0 10px;
+	text-shadow: rgba(5, 6, 6, .20)0 0 10px;
 }
 
 #text-link {
@@ -61,7 +86,6 @@ h4 {
 
 .section-header {
 	background-image: url("./images/img_banner2.png");
-	/* background-image: url("./images/swing.gif"); */
 	height: 400px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -75,6 +99,7 @@ h4 {
 	display: flex;
 	justify-content: center;
 	margin: 20px;
+/* 	z-index: 4; */
 }
 
 .section-download {
@@ -113,6 +138,7 @@ h4 {
   	display:flex;
 	justify-content: center;
 	max-width: 100%;
+	box-shadow: rgba(5, 6, 6, .50)0 0 35px;
 	}
 
 iframe{
@@ -152,7 +178,12 @@ iframe{
 	line-height: 1.5em;
 	list-style-type: square;
 	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
+	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
 	}
+
+strong {
+	text-shadow: rgba(5, 6, 6, .40)0 0 10px;
+}
 
 .bullet-list li {
 	margin: 10px 0;
@@ -219,6 +250,7 @@ iframe{
 	justify-content: flex-start;
 	align-items: center;
 	margin: 10px;
+	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
 	
 	font-family: "Annie Use Your Telescope", Arial, serif;
 	font-style: italic;
@@ -322,6 +354,11 @@ footer {
 {
 	hr { width: 640px;}
 	
+	.content {
+	background-position: 55% 19px;
+	background-size: 105px;
+	}
+
 	.section-header { 
 	height: 650px;
 	}
@@ -408,15 +445,83 @@ footer {
 @media only screen and (min-width: 960px)
 {
 	hr { width: 960px;}
+	
+	.content {
+	background-position: 48% -2px;
+	background-size: 116px;
+	}
+	
+	.section-header {
+	display:none;
+	}
 
-	.section-header { 
-	background-attachment: fixed;
+	.parallax__group {
+	display: block;
+    position: relative;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index:-1;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .parallax__layer--1 {
+    background-image: url("images/parallax/parallax_1.png");
+    transform: translateZ(0);
+  }
+  
+  .parallax__layer--2 {
+    background-image: url("images/parallax/parallax_2.png");
+    transform: translateZ(-200px) scale(1.26);
+  }
+
+  .parallax__layer--3 {
+    background-image: url("images/parallax/parallax_3.png");
+    transform: translateZ(-400px) scale(1.506);
+  }
+
+  .parallax__layer--4 {
+    background-image: url("images/parallax/parallax_4.png");
+    transform: translateZ(-600px) scale(1.75);
+  }
+
+  .parallax__layer--5 {
+    background-image: url("images/parallax/parallax_5.png");
+    transform: translateZ(-800px) scale(2);
+  }
+
+  .parallax__layer--6 {
+    background-image: url("images/parallax/parallax_6.png");
+    transform: translateZ(-1000px) scale(2.27);
+  }
+
+  .parallax__layer--7 {
+     background-image: url("images/parallax/parallax_7.png");
+    transform: translateZ(-1200px) scale(2.525);
+  }
+	
+	.header-logo {
+	transform: translateZ(-1200px) scale(2.5);
+    display: block;
+	text-align: center;
 	}
 	
 	.header-logo img {
-	margin: 30px;
+	margin: 50px auto ;
+	width: 250px;
+	position: relative;
+	display:block;
 	}
-
+	
 	.section-download {
 	padding: 50px;
 	}
