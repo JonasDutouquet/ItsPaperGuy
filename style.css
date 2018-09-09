@@ -104,6 +104,7 @@ h4 {
 }
 
 .section-download {
+	min-height:30vh;
 	padding: 30px;
 	display: flex;
 	justify-content: center;
@@ -352,7 +353,7 @@ footer {
 	text-align: center;
 	}
 
-@media only screen and (min-width: 415px) or (orientation: landscape)
+@media only screen and (min-width: 415px)
 {
 	hr { width: 640px;}
 	
@@ -450,7 +451,7 @@ footer {
 	
 	.content {
 	background-position: 48% -2px;
-	background-size: 116px;
+	background-size: 10vw;
 	}
 	
 	.section-header {
@@ -518,8 +519,8 @@ footer {
 	}
 	
 	.header-logo img {
-	margin: 50px auto ;
-	width: 250px;
+	margin: 10vh auto ;
+	width: 30vh;
 	position: relative;
 	display:block;
 	}
