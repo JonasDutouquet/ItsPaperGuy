@@ -88,7 +88,7 @@ h4 {
 
 .section-header {
 	background-image: url("./images/img_banner2.png");
-	height: 400px;
+	height: 70vh;
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: bottom center;
@@ -97,14 +97,15 @@ h4 {
 	}
 
 .header-logo img {
-	width: 200px;
+	/*width: 200px;*/
+	width: 35vh;
 	display: flex;
 	justify-content: center;
 	margin: 20px;
 }
 
 .section-download {
-	min-height:30vh;
+	height:30vh;
 	padding: 30px;
 	display: flex;
 	justify-content: center;
@@ -135,7 +136,7 @@ h4 {
 	}
 
 .section-trailer {
-	background: url("./images/img_trailer_bg.png") no-repeat bottom center;
+	background: url("./images/img_trailer_bg.jpg") no-repeat bottom center;
   	background-size: cover;
   	display:flex;
 	justify-content: center;
@@ -164,7 +165,7 @@ iframe{
 	}
 
 .its-cute {
-	max-width: 70%;
+	max-width: 70vw;
 	margin: 0 0 10px 0;
 }
 
@@ -353,22 +354,20 @@ footer {
 	text-align: center;
 	}
 
-@media only screen and (min-width: 415px)
+@media only screen and (min-width: 415px),
 {
 	hr { width: 640px;}
 	
 	.content {
 	background-position: 55% 19px;
-	background-size: 105px;
-	}
-
-	.section-header { 
-	height: 650px;
+	background-size: 15vw;
 	}
 
 	.header-logo img {
-	width: 300px;
-	margin: 40px;
+	/*width: 300px;*/
+	width: 30vh;
+	/*margin: 40px;*/
+	margin: 5vh;
 	}
 
 	h2 {
@@ -445,7 +444,7 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 960px) 
+@media only screen and (min-width: 960px)
 {
 	hr { width: 960px;}
 	
