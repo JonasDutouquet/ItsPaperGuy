@@ -354,7 +354,7 @@ footer {
 	text-align: center;
 	}
 
-@media only screen and (min-width: 415px),
+@media only screen and (min-width: 415px)
 {
 	hr { width: 640px;}
 	
@@ -364,9 +364,7 @@ footer {
 	}
 
 	.header-logo img {
-	/*width: 300px;*/
 	width: 30vh;
-	/*margin: 40px;*/
 	margin: 5vh;
 	}
 
@@ -441,6 +439,31 @@ footer {
 	.credit img {
 	height:90%;
 	width: auto;
+	}
+}
+
+@media only screen and (max-width: 959px) and (orientation: landscape)
+{
+	.content {
+	background-position: 58% 12px;
+	background-size: 9vw;
+	}
+	
+	.section-header {
+	height: 100vh;
+	}
+
+	.section-download {
+	height:70vh;
+	}
+
+	.bullet-list {
+	font-size: 1em;
+	line-height: 1.2em;
+	}
+
+	.section-credits {
+	padding: 20px 5vw 0 5vw;
 	}
 }
 
