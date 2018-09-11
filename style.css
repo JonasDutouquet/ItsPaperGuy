@@ -453,6 +453,11 @@ footer {
 	height: 100vh;
 	}
 
+	.header-logo img {
+	width: 50vh;
+	margin: 5vh;
+	}
+	
 	.section-download {
 	height:70vh;
 	}
