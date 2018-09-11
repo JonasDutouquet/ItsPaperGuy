@@ -34,7 +34,7 @@ body {
 .parallax {
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     -webkit-perspective: 800px;
     perspective:800px;
     max-width:100%;
@@ -479,7 +479,11 @@ footer {
 	.section-header {
 	display:none;
 	}
-
+	
+	.parallax {
+	overflow-y: auto;
+	}
+	
 	.parallax__group {
 	display: block;
     position: relative;
