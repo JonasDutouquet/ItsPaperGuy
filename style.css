@@ -68,7 +68,7 @@ h3 {
 
 h4 {
 	font-family: "Annie Use Your Telescope", Arial, serif;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	text-shadow: rgba(5, 6, 6, .20)0 0 10px;
 }
 
@@ -115,7 +115,7 @@ h4 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-shadow: rgba(5, 6, 6, .90)0 0 10px;
+	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
 	}
 
 .download-button{
@@ -258,7 +258,7 @@ strong {
 	font-size: 1.05em;
 	}
 
-.download-button, .quote-img, .award-img, .credit, .social-link-button {
+.download-button, .quote-img, .award-img, .credit, .social-link-button, .button {
  	-webkit-transition:opacity 0.2s;
     -moz-transition:opacity 0.2s;
     -o-transition:opacity 0.2s;
@@ -269,32 +269,88 @@ strong {
 	opacity: 0.7;
 	}
 
-.section-social-links {
+/*.section-social-links {
 	max-width: 100%;
 	display: flex;
 	align-items:center;
 	justify-content: center;
 	padding: 30px 0;
+}*/
+
+.section-mail-signup { 
+	max-width: 100%;
+	text-align: center;
+	margin:30px 0 40px 0;
+}
+
+.signup-container{
+	box-shadow: rgba(5, 6, 6, .90)0 0 10px;
+	max-width:300px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.signup {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.signup-field {
+	width: 80%;
+}
+
+.button, .required {
+	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;	
+	font-size: 1em;
+	height:35px;
+}
+
+.subscribe {
+	min-width: 20%;
+}
+
+.required{
+	background-color:aliceblue;
+	border-style:none;
+	width:100%;
+	padding-left: 10px;
+}
+
+.button {
+	background-color:cornsilk;
+	border-style: none;
+	text-align:center;
+	width: 100%;
+}
+
+.button:hover {
+	opacity:0.7;
 }
 
 .social-links-container {
-	max-width: 350px;
+	/*border: 1px solid blue; */
+	max-width: 300px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: auto;
+	padding-top:10px;
 }
 
 .social-link-button {
-	max-width:20%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/*border: 1px solid red; */
+	max-width:15%;
+	margin:0 15px;
 }
 
 .social-link-button img {
-	max-width:100%;
+	width:100%;
 }
+
 
 .section-credits { 
 	padding: 20px 5px 0 5px;
@@ -413,6 +469,10 @@ footer {
 	.bullet-list {
 	font-size: 1.1em;
 	line-height: 1.5em;
+	}
+
+	.signup-container{
+	max-width:400px;
 	}
 
 	.section-credits {
