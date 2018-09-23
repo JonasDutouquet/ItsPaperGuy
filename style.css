@@ -26,9 +26,14 @@
 }
 
 body {
-	--main-bg-color: #2d5da4;
-	background-color: var(--main-bg-color);	
+	background-color: #2d5da4;	
 	overflow: hidden;
+}
+
+.flex {
+	display:flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .parallax {
@@ -47,6 +52,7 @@ body {
 	background-repeat: repeat;
 	background-position: 55% 14px;
 	background-size: 70px;
+	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
 }
 
 hr {
@@ -90,39 +96,27 @@ h4 {
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: bottom center;
-    display: flex;
-	justify-content: center;
+	align-items:start;
 	}
 
 .header-logo img {
 	width: 35vh;
-	display: flex;
-	justify-content: center;
 	margin: 20px;
 }
 
 .section-download {
 	height:31vh;
 	padding: 5vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	}
 
 .download-container {
 	max-width: 350px;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
 	}
 
 .download-button{
 	max-width: 60%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-radius: 15px;
 	box-shadow: rgba(5, 6, 6, .50)0 0 15px;
 	margin-bottom: 10px
@@ -135,8 +129,6 @@ h4 {
 .section-trailer {
 	background: url("./images/img_trailer_bg.jpg") no-repeat bottom center;
   	background-size: cover;
-  	display:flex;
-	justify-content: center;
 	max-width: 100%;
 	box-shadow: rgba(5, 6, 6, .50)0 0 35px;
 	}
@@ -151,14 +143,10 @@ iframe{
 .section-features {
 	margin: 8vh 0;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
 }
 
 .features-container {
-	display: flex;
 	flex-direction: column;
-	align-items: center;
 	}
 
 .its-cute {
@@ -179,7 +167,6 @@ iframe{
 	font-size: 1.1em;
 	line-height: 1.5em;
 	list-style-type: square;
-	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
 	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
 	}
 
@@ -194,78 +181,58 @@ strong {
 .section-screenshots {
 	padding: 30px 10px;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	}
 
 .screenshots-container {
-	max-width: 1000px;		
-	display: flex;
-	justify-content: center;
+	max-width: 1000px;
 	flex-wrap: wrap;
 	}
 
 .screenshot img {
     width: 300px;
     margin: 10px;
-    -webkit-transition: opacity .2s;
-    -moz-transition: opacity .2s;
-    -o-transition: opacity .2s;
-    transition: opacity .2s;
     box-shadow: rgba(5, 6, 6, .50)0 0 15px;
 }
-
-.screenshot img:hover {
-	opacity: 0.7
-	}
 
 .section-awards {
 	margin: 8vh;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	}
 	
 .section-quotes {
 	padding: 10px;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	}
 
 .quotes-container {
-	max-width: 1200px;		/* Modify here to get only 2 columns */
-	display: flex;
-	justify-content: center;
+	max-width: 1200px;
 	flex-wrap: wrap;
 	}
 
 .quote {
 /*border: 1px solid green;*/ 
 	width: 330px;
-	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	margin: 10px;	
+	}
+
+.quote p{
 	margin: 10px;
 	text-shadow: rgba(5, 6, 6, .30)0 0 10px;
-	
 	font-family: "Annie Use Your Telescope", Arial, serif;
 	font-style: italic;
 	font-size: 1.05em;
-	}
+}
 
-.download-button, .quote-img, .award-img, .credit, .social-link-button, .button {
+.download-button, .quote-img, .award-img, .credit, .social-link-button, .button, .screenshot img {
  	-webkit-transition:opacity 0.2s;
     -moz-transition:opacity 0.2s;
     -o-transition:opacity 0.2s;
     transition: opacity 0.2s;
 }
 
-.quote-img:hover, .download-button:hover, .award-img:hover, .credit:hover, .social-link-button:hover {
+.quote-img:hover, .download-button:hover, .award-img:hover, .credit:hover, .social-link-button:hover, .screenshot img:hover, .button:hover {
 	opacity: 0.7;
 	}
 
@@ -291,10 +258,6 @@ strong {
 }
 
 .signup {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	width: 100%;
 }
 
@@ -326,17 +289,9 @@ strong {
 	width: 100%;
 }
 
-.button:hover {
-	opacity:0.7;
-}
-
 .social-links-container {
 	/*border: 1px solid blue; */
 	max-width: 300px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
 	padding-top:10px;
 }
@@ -351,19 +306,14 @@ strong {
 	width:100%;
 }
 
-
 .section-credits { 
 	padding: 20px 5px 0 5px;
 	max-width: 100%;
-	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align:center;
 }
 
-#student-game, #mentions {
-	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
+#student-game {
 	font-size: 0.5em;
 	line-height: 0.2em;
 }
@@ -371,13 +321,12 @@ strong {
 #mentions {
 	font-size: 0.4em;
 	line-height: 1.2em;
+	max-width: 90vw;	
 }
 
 .credits-container {
 	min-width: 300px;
-	display: flex;
 	justify-content: space-around;
-	align-items: center;
 	margin: 10px 10px;
 }
 
@@ -385,9 +334,6 @@ strong {
 	/* border: 1px solid blue; */
 	margin: 0 5px;
 	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 
 .credit img {
@@ -398,10 +344,6 @@ strong {
 footer {
 	padding: 30px 10px 10px 10px;
 	max-width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "quicksandregular","Helvetica Neue",Helvetica,sans-serif;
 	font-size: 0.7em;
 	line-height: 0.8em;
 	text-align: center;
@@ -409,7 +351,7 @@ footer {
 
 @media only screen and (min-width: 415px)
 {
-	hr { width: 640px;}
+	hr { max-width: 640px;}
 	
 	.content {
 	background-position: 55% 19px;
@@ -431,22 +373,14 @@ footer {
 	}
 	
 	iframe {
-		width:400px;
-		height: 225px;
-		margin: 30px 0;
+	width:400px;
+	height: 225px;
+	margin: 30px 0;
 	}
-	
-	.section-features {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 	.features-container {
-	display: flex;
 	flex-direction: row;
 	justify-content: space-around; 
-	align-items: center;
 	max-width: 90%;
 	}
 
@@ -475,18 +409,16 @@ footer {
 	max-width:400px;
 	}
 
-	.section-credits {
-	padding: 20px 100px 0 100px;
-	}
-
-	#student-game, #mentions {
+	#student-game{
 	font-size: 0.7em;
 	line-height: 0.2em;
+
 	}
 
 	#mentions {
 	font-size: 0.6em;
 	line-height: 1.2em;
+	max-width: 600px;
 	}
 
 	.credits-container {
@@ -495,7 +427,6 @@ footer {
 
 	.credit img {
 	height:90%;
-	width: auto;
 	}
 }
 
@@ -606,8 +537,6 @@ footer {
 	
 	.header-logo {
 	transform: translateZ(-1200px) scale(2.5);
-    display: block;
-	text-align: center;
 	}
 	
 	.header-logo img {
@@ -624,11 +553,10 @@ footer {
 	h3 {display: none;}
 	
 	iframe {
-		width:796px;
-		height: 448px;
-		margin: 40px 0;
+	width:796px;
+	height: 448px;
+	margin: 40px 0;
 	}
-
 
 	.features-container {
 	max-width: 800px;
@@ -654,6 +582,5 @@ footer {
 
 	.credit img {
 	height:100%;
-	width: auto;
 	}
 }
