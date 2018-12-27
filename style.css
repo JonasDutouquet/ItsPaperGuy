@@ -205,6 +205,8 @@ strong {
 
 .award {
 	margin: 2vw 5vw;
+	width:300px;
+	text-align: center;
 }
 	
 .section-quotes {
